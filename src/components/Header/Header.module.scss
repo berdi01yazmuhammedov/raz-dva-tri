@@ -1,0 +1,18 @@
+.header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav{
+    ul{
+        display: flex;
+        gap: 15px;
+        li{
+            transition: opacity 0.3s ease;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+  }
+}

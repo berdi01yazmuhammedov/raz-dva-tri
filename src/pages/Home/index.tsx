@@ -5,7 +5,7 @@ export const Home = () => {
     return (
         <>
         <Header />
-        <main className={styles.container}>main COntent</main>
+        <main className="container">main COntent</main>
         
         </>
     );

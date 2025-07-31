@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$primary-font: "PT Sans", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+
+$content-width: 984px;
+// Брейкпоинты
+$breakpoints: (
+  desktop-xl: 1280px,
+  desktop: 1024px,
+  tablet: 768px,
+  mobile-l: 480px,
+  mobile-s: 360px
+);
+
+
+@mixin max($name) {
+  @media (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}
